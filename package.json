@@ -1,5 +1,5 @@
 {
-  "name": "myproject",
+  "name": "request-header-parser",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
