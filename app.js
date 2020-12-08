@@ -7,10 +7,10 @@ app.use(cors({ optionsSuccessStatus: 200 }));
 
 app.get('/', (req, res) => res.sendFile(__dirname + "/views/index.html"));
 
-app.set('trust proxy', true)
 app.get('/api/whoami', (req, res) => {
     res.json({
-        ipadress: req.ip,
+        ipaddress: req.headers['x-forwarded-for'] ||
+            req.connection.remoteAddress,
         language: req.headers["accept-language"],
         software: req.headers["user-agent"]
     })
