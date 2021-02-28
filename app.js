@@ -5,7 +5,7 @@ const port = 3000;
 
 app.use(cors({ optionsSuccessStatus: 200 }));
 
-app.get('/', (req, res) => res.sendFile(__dirname + "/views/index.html"));
+app.get('/', (req, res) => res.send('Read README to use api.'));
 
 app.get('/api/whoami', (req, res) => {
     res.json({
