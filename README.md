@@ -1,8 +1,16 @@
 # Request Header Parser
 
+## Description
+Backend APIs show information of request
 
-A request to /api/whoami should return a JSON object with your IP address in the ipaddress key.
+## Use
+```
+git clone https://github.com/hadinhtu97/request-header-parser
+cd request-header-parser
+npm install
+npm run start
+```
 
-A request to /api/whoami should return a JSON object with your preferred language in the language key.
-
-A request to /api/whoami should return a JSON object with your software in the software key.
+## API
+* GET
+  * `[]/api/timestamp/whoami`
